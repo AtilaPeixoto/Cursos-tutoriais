@@ -1,0 +1,26 @@
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+
+{% comment %} 
+
+Lembre-se, quando escrevemos o link para uma pergunta no template 
+polls/templates/index.html, o link foi parcialmente codificado como este:
+
+<li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+
+O problema com com essa abordagem acoplada, hardcoded é que torna muito difícil alterar URLs 
+em projetos com muitos templates. Todavia, se definimos o argumento name nas funções path() 
+no módulo polls.urls, você pode remover a dependência de um caminho de URL específico
+ nas configurações de url usando a template tag
+
+{% url %}:<li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li> 
+  
+  {% endcomment %}

@@ -1,0 +1,27 @@
+from tkinter import *
+
+
+
+def mostrarnome():
+    var.set(f'O  nome é : {texto.get()}')
+              
+              
+janela = Tk()
+janela.title('nome da app')
+
+janela.geometry('200x100')
+
+var = StringVar()
+label1 = Label(janela, text='Escreva seu nome')
+label_final = Label(janela, textvariable=var)
+texto = Entry(janela)
+btn = Button(janela, text='executar', command=mostrarnome)
+
+
+label1.grid()
+texto.grid()
+label_final.grid()
+btn.grid()
+
+
+janela.mainloop()

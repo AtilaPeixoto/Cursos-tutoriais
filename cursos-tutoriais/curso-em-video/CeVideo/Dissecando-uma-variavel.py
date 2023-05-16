@@ -1,0 +1,26 @@
+import string
+
+v = input("digite")
+print("o tipo primitivo da classe é ", type(v))
+a = v.isalnum()
+b = v.islower()
+c = v.istitle()
+d = v.isascii()
+e = v.isupper()
+f = v.isidentifier()
+g = v.isdigit()
+h = v.isalpha()
+i = v.isprintable()
+j = v.isspace()
+
+print("É ALPHANUMERICO?{:>5}".format(a))
+#  a definiçao de espaço ocupados dentro das chavez e nao funcionou com tipo ogico de verificaçao
+print("alpha/ALFABETICO{}?".format(h))
+print("ascii/POSSUI CARACTERES{}?".format(d))
+print("lower/MINUSCULAS{}?".format(b))
+print("digit?{}".format(g))
+print("identifer?{}".format(f))
+print("print table/capitalizado/minusculas e maiusculas?{:>5}".format(i))
+print("title?{}".format(c))
+print("upper/MAIUSCULAS?{}".format(e))
+print("contem espaços?{}".format(j))
