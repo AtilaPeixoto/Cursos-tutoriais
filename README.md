@@ -1,13 +1,9 @@
-# Cursos-tutoriais
-cursos-tutotiais
-Aqui os exercicios de alguns dos cursos e tutoriais que fiz.
+# Este repositorio carrega os tutorias da internet feitos por mim. 
+# Python
+*  Cursoemvideo.com 
 
-# Curso em video 
-* feito no site: cursoemvideo.com.br
-* professor: Guanabara
-* youtube: cursoemvideo
+# Tkinter
+*  https://www.youtube.com/@JLDRPT
 
-# tkinter
-* youtube: joãoribeiro
-* professor: João Ribeiro
-"# Cursos-tutoriais" 
+# Django
+*  https://docs.djangoproject.com/
